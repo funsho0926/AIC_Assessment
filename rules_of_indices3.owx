@@ -1,0 +1,1929 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/ontology/rules_of_indices"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/ontology/rules_of_indices"
+     versionIRI="http://example.org/ontology/rules_of_indices/1.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/admin/ontologies/2024/11/untitled-ontology-2/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>A mathematical ontology that describes the rules of indices</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorrectFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DivisionRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FractionalExponentRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncorrectFeedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndexRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnowledgeLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LawsOfIndicesITS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MathematicalConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiplicationRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeExponentRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticeProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Progress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quiz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuizCompletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuizScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuleExplanation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simplification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudentClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TutoringModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkedExample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZeroExponentRule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followsRule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompleted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeedback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKnowledgeLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProgress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuiz"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScored"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAchieved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTracking"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resultsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasComplete"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCurrentScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEnrollmentDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFeedbackText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFormula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInstructionText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMasteryLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasQuizQuestion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScoreWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Base6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Calculation1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorrectFeedback1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorrectFeedback2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorrectFeedback3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorrectFeedback4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorrectFeedback5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorrectFeedback6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DivisionExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DivisionInstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DivisionRule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exponent8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FractionalExponentExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FractionalExponentInstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncorrectFeedback1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncorrectFeedback2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncorrectFeedback3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncorrectFeedback4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncorrectFeedback5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncorrectFeedback6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KnowledgeLevel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KnowledgeLevel2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KnowledgeLevel3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultiplicationExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultiplicationInstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NegativeExponentInstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NegativeExponentialExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerRule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerRuleExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerRuleInstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeDivision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Progress1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Progress2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Progress3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quiz1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quiz2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QuizCompletion1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QuizCompletion2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QuizScore1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QuizScore2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Result1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Result2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Simplification1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZeroExponentExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZeroExponentInstruction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZeroExponentRule1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#TutoringModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Base"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calculation"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Component"/>
+        <Class IRI="#MathematicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorrectFeedback"/>
+        <Class IRI="#Feedback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionRule"/>
+        <Class IRI="#IndexRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exponent"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#TutoringModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FractionalExponentRule"/>
+        <Class IRI="#IndexRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncorrectFeedback"/>
+        <Class IRI="#Feedback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndexRule"/>
+        <Class IRI="#MathematicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instruction"/>
+        <Class IRI="#TutoringModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnowledgeLevel"/>
+        <Class IRI="#StudentClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MathematicalConcept"/>
+        <Class IRI="#LawsOfIndicesITS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiplicationRule"/>
+        <Class IRI="#IndexRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeExponentRule"/>
+        <Class IRI="#IndexRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation"/>
+        <Class IRI="#MathematicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerRule"/>
+        <Class IRI="#IndexRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracticeProblem"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Progress"/>
+        <Class IRI="#StudentClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quiz"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuizCompletion"/>
+        <Class IRI="#StudentClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuizScore"/>
+        <Class IRI="#StudentClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Result"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuleExplanation"/>
+        <Class IRI="#Instruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simplification"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#StudentClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudentClass"/>
+        <Class IRI="#LawsOfIndicesITS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TutoringModel"/>
+        <Class IRI="#LawsOfIndicesITS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkedExample"/>
+        <Class IRI="#Instruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZeroExponentRule"/>
+        <Class IRI="#IndexRule"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#Instruction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Base"/>
+        <Class IRI="#Exponent"/>
+        <Class IRI="#Result"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Calculation"/>
+        <Class IRI="#Simplification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CorrectFeedback"/>
+        <Class IRI="#IncorrectFeedback"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DivisionRule"/>
+        <Class IRI="#FractionalExponentRule"/>
+        <Class IRI="#MultiplicationRule"/>
+        <Class IRI="#NegativeExponentRule"/>
+        <Class IRI="#PowerRule"/>
+        <Class IRI="#ZeroExponentRule"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KnowledgeLevel"/>
+        <Class IRI="#Progress"/>
+        <Class IRI="#QuizCompletion"/>
+        <Class IRI="#QuizScore"/>
+        <Class IRI="#Student"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticeProblem"/>
+        <Class IRI="#Quiz"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RuleExplanation"/>
+        <Class IRI="#WorkedExample"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Base"/>
+        <NamedIndividual IRI="#Base1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Base"/>
+        <NamedIndividual IRI="#Base2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Base"/>
+        <NamedIndividual IRI="#Base3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Base"/>
+        <NamedIndividual IRI="#Base4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Base"/>
+        <NamedIndividual IRI="#Base5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Base"/>
+        <NamedIndividual IRI="#Base6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Calculation"/>
+        <NamedIndividual IRI="#Calculation1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorrectFeedback"/>
+        <NamedIndividual IRI="#CorrectFeedback1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorrectFeedback"/>
+        <NamedIndividual IRI="#CorrectFeedback2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorrectFeedback"/>
+        <NamedIndividual IRI="#CorrectFeedback3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorrectFeedback"/>
+        <NamedIndividual IRI="#CorrectFeedback4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorrectFeedback"/>
+        <NamedIndividual IRI="#CorrectFeedback5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorrectFeedback"/>
+        <NamedIndividual IRI="#CorrectFeedback6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkedExample"/>
+        <NamedIndividual IRI="#DivisionExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuleExplanation"/>
+        <NamedIndividual IRI="#DivisionInstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionRule"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exponent"/>
+        <NamedIndividual IRI="#Exponent8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkedExample"/>
+        <NamedIndividual IRI="#FractionalExponentExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuleExplanation"/>
+        <NamedIndividual IRI="#FractionalExponentInstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FractionalExponentRule"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncorrectFeedback"/>
+        <NamedIndividual IRI="#IncorrectFeedback1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncorrectFeedback"/>
+        <NamedIndividual IRI="#IncorrectFeedback2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncorrectFeedback"/>
+        <NamedIndividual IRI="#IncorrectFeedback3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncorrectFeedback"/>
+        <NamedIndividual IRI="#IncorrectFeedback4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncorrectFeedback"/>
+        <NamedIndividual IRI="#IncorrectFeedback5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncorrectFeedback"/>
+        <NamedIndividual IRI="#IncorrectFeedback6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KnowledgeLevel"/>
+        <NamedIndividual IRI="#KnowledgeLevel1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KnowledgeLevel"/>
+        <NamedIndividual IRI="#KnowledgeLevel2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KnowledgeLevel"/>
+        <NamedIndividual IRI="#KnowledgeLevel3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkedExample"/>
+        <NamedIndividual IRI="#MultiplicationExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuleExplanation"/>
+        <NamedIndividual IRI="#MultiplicationInstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultiplicationRule"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuleExplanation"/>
+        <NamedIndividual IRI="#NegativeExponentInstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NegativeExponentRule"/>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkedExample"/>
+        <NamedIndividual IRI="#NegativeExponentialExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerRule"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkedExample"/>
+        <NamedIndividual IRI="#PowerRuleExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuleExplanation"/>
+        <NamedIndividual IRI="#PowerRuleInstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeProblem"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeProblem"/>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeProblem"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeProblem"/>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeProblem"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeProblem"/>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Progress"/>
+        <NamedIndividual IRI="#Progress1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Progress"/>
+        <NamedIndividual IRI="#Progress2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Progress"/>
+        <NamedIndividual IRI="#Progress3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quiz"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quiz"/>
+        <NamedIndividual IRI="#Quiz2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuizCompletion"/>
+        <NamedIndividual IRI="#QuizCompletion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuizCompletion"/>
+        <NamedIndividual IRI="#QuizCompletion2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuizScore"/>
+        <NamedIndividual IRI="#QuizScore1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QuizScore"/>
+        <NamedIndividual IRI="#QuizScore2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Result"/>
+        <NamedIndividual IRI="#Result1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Result"/>
+        <NamedIndividual IRI="#Result2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Simplification"/>
+        <NamedIndividual IRI="#Simplification1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkedExample"/>
+        <NamedIndividual IRI="#ZeroExponentExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuleExplanation"/>
+        <NamedIndividual IRI="#ZeroExponentInstruction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ZeroExponentRule"/>
+        <NamedIndividual IRI="#ZeroExponentRule1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsRule"/>
+        <NamedIndividual IRI="#Calculation1"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultsIn"/>
+        <NamedIndividual IRI="#Calculation1"/>
+        <NamedIndividual IRI="#Result2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#DivisionInstruction"/>
+        <NamedIndividual IRI="#DivisionExample"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+        <NamedIndividual IRI="#Base2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+        <NamedIndividual IRI="#Exponent2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+        <NamedIndividual IRI="#Exponent3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#FractionalExponentInstruction"/>
+        <NamedIndividual IRI="#FractionalExponentExample"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+        <NamedIndividual IRI="#Base6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+        <NamedIndividual IRI="#Exponent7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+        <NamedIndividual IRI="#Exponent8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAchieved"/>
+        <NamedIndividual IRI="#KnowledgeLevel1"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAchieved"/>
+        <NamedIndividual IRI="#KnowledgeLevel2"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAchieved"/>
+        <NamedIndividual IRI="#KnowledgeLevel3"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#MultiplicationInstruction"/>
+        <NamedIndividual IRI="#MultiplicationExample"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+        <NamedIndividual IRI="#Base1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+        <NamedIndividual IRI="#Exponent1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#NegativeExponentInstruction"/>
+        <NamedIndividual IRI="#NegativeExponentialExample"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+        <NamedIndividual IRI="#Base5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+        <NamedIndividual IRI="#Exponent6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+        <NamedIndividual IRI="#Base3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+        <NamedIndividual IRI="#Exponent4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExponent"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+        <NamedIndividual IRI="#Exponent5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#PowerRuleInstruction"/>
+        <NamedIndividual IRI="#PowerRuleExample"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+        <NamedIndividual IRI="#CorrectFeedback2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+        <NamedIndividual IRI="#IncorrectFeedback2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+        <NamedIndividual IRI="#CorrectFeedback5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+        <NamedIndividual IRI="#IncorrectFeedback5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+        <NamedIndividual IRI="#Quiz2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+        <NamedIndividual IRI="#CorrectFeedback1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+        <NamedIndividual IRI="#IncorrectFeedback1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+        <NamedIndividual IRI="#CorrectFeedback6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+        <NamedIndividual IRI="#IncorrectFeedback6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+        <NamedIndividual IRI="#Quiz2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+        <NamedIndividual IRI="#CorrectFeedback3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+        <NamedIndividual IRI="#IncorrectFeedback3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+        <NamedIndividual IRI="#CorrectFeedback4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+        <NamedIndividual IRI="#IncorrectFeedback4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+        <NamedIndividual IRI="#ZeroExponentRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTracking"/>
+        <NamedIndividual IRI="#Progress1"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTracking"/>
+        <NamedIndividual IRI="#Progress2"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTracking"/>
+        <NamedIndividual IRI="#Progress3"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Quiz1"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Quiz1"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Quiz1"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Quiz1"/>
+        <NamedIndividual IRI="#ZeroExponentRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Quiz2"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Quiz2"/>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompleted"/>
+        <NamedIndividual IRI="#QuizCompletion1"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompleted"/>
+        <NamedIndividual IRI="#QuizCompletion2"/>
+        <NamedIndividual IRI="#Quiz2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasScored"/>
+        <NamedIndividual IRI="#QuizScore1"/>
+        <NamedIndividual IRI="#Quiz1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasScored"/>
+        <NamedIndividual IRI="#QuizScore2"/>
+        <NamedIndividual IRI="#Quiz2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followsRule"/>
+        <NamedIndividual IRI="#Simplification1"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultsIn"/>
+        <NamedIndividual IRI="#Simplification1"/>
+        <NamedIndividual IRI="#Result1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKnowledgeLevel"/>
+        <NamedIndividual IRI="#Student1"/>
+        <NamedIndividual IRI="#KnowledgeLevel1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProgress"/>
+        <NamedIndividual IRI="#Student1"/>
+        <NamedIndividual IRI="#Progress1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKnowledgeLevel"/>
+        <NamedIndividual IRI="#Student2"/>
+        <NamedIndividual IRI="#KnowledgeLevel2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProgress"/>
+        <NamedIndividual IRI="#Student2"/>
+        <NamedIndividual IRI="#Progress2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKnowledgeLevel"/>
+        <NamedIndividual IRI="#Student3"/>
+        <NamedIndividual IRI="#KnowledgeLevel3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProgress"/>
+        <NamedIndividual IRI="#Student3"/>
+        <NamedIndividual IRI="#Progress3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#ZeroExponentInstruction"/>
+        <NamedIndividual IRI="#ZeroExponentExample"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#ZeroExponentRule1"/>
+        <NamedIndividual IRI="#Base4"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Base1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Base2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Base3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Base4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Base5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Base6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#CorrectFeedback1"/>
+        <Literal>Great job, You applied the multiplication rule correctly.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#CorrectFeedback2"/>
+        <Literal>Great work! You applied the division rule correctly.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#CorrectFeedback3"/>
+        <Literal>Well done! You multiplied the exponents correctly.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#CorrectFeedback4"/>
+        <Literal>Excellent! Any number to the power of zero is 1.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#CorrectFeedback5"/>
+        <Literal>Great job! You applied the fractional exponent rule correctly.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#CorrectFeedback6"/>
+        <Literal>Great job! You handled the negative exponent correctly.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#DivisionExample"/>
+        <Literal>Example
+Simplify 21a^9 ÷ 7a^2
+
+1. Subtract the indices 9 and 2.
+
+9 – 2 = 7
+
+2. Divide the coefficients 21 and 7.
+
+21 ÷ 7 = 3
+
+So,
+
+21a^9 ÷ 7a^2 = 3a^7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#DivisionInstruction"/>
+        <Literal>When dividing powers with the same base, subtract the exponents.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+        <Literal>a^m ÷ a^n = a^(m−n)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSample"/>
+        <NamedIndividual IRI="#DivisionRule1"/>
+        <Literal>2^5 ÷ 2^3 = 2^(5−3) = 2^2 = 4.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Exponent8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#FractionalExponentExample"/>
+        <Literal>Evaluate 27^(2/3)
+
+Use the denominator to find the cube root of the number or letter.
+
+√27 = 3
+
+Raise the answer to the power of the numerator.
+
+3^2 = 9
+
+So, 
+
+27^(2/3) = 9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#FractionalExponentInstruction"/>
+        <Literal>A fractional exponent represents a root. For example, 𝑎^(1/n) is the n-th root of a.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#FractionalExponentRule1"/>
+        <Literal>a^(m/n) = (a^m)^(1/n)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#IncorrectFeedback1"/>
+        <Literal>Remember, for multiplication, you add the exponents, not multiply them.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#IncorrectFeedback2"/>
+        <Literal>Remember, for division, you subtract the exponents, not divide them.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#IncorrectFeedback3"/>
+        <Literal>Remember, for powers of powers, you multiply the exponents.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#IncorrectFeedback4"/>
+        <Literal>Remember, x^0 is always 1, regardless of the base.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#IncorrectFeedback5"/>
+        <Literal>Remember, a fractional exponent represents a root, not multiplication.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <NamedIndividual IRI="#IncorrectFeedback6"/>
+        <Literal>Remember, a negative exponent means the reciprocal, not a negative number.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMasteryLevel"/>
+        <NamedIndividual IRI="#KnowledgeLevel1"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMasteryLevel"/>
+        <NamedIndividual IRI="#KnowledgeLevel2"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMasteryLevel"/>
+        <NamedIndividual IRI="#KnowledgeLevel3"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#MultiplicationExample"/>
+        <Literal>Example
+
+Simplify
+
+4a^3 × 7a^2
+
+This can be written as
+
+4a^3 × 7a^2 = 4×a×a×a×7×a×a
+
+1. Add together the indices 3 and the 2.
+
+3 + 2 = 5
+
+2. Multiply 4 and 7 together.
+
+4 × 7 = 28
+
+So,
+
+4a^3 × 7a^2 = 28a^5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#MultiplicationInstruction"/>
+        <Literal>When multiplying powers with the same base, add the exponents.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+        <Literal>a^m × a^n = a^(m+n)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSample"/>
+        <NamedIndividual IRI="#MultiplicationRule1"/>
+        <Literal>2^3 × 2^2 = 2^5 = 32.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#NegativeExponentInstruction"/>
+        <Literal>A negative exponent means taking the reciprocal. For example, 𝑎^(-n) = 1/𝑎^𝑛.
+ .</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#NegativeExponentRule1"/>
+        <Literal>a^−n = 1/a^n​</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#NegativeExponentialExample"/>
+        <Literal>Example 3: negative indices
+
+Simplify and leave your answer in index form.
+
+(−4a^−3)^2
+
+Multiply the indices -3 and the 2.
+
+−3 × 2 = −6
+
+Raise -4 to the power of 2.
+
+(−4)^2 = 16
+
+So,
+
+(−4a^−3)^2 = 16a^−6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#PowerRule1"/>
+        <Literal>(𝑎^𝑚)^𝑛 = 𝑎^(𝑚⋅𝑛)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#PowerRuleExample"/>
+        <Literal>Example
+
+Simplify and leave your answer in index form.
+
+(10a^3)^2
+
+Multiply the indices 3 and the 2.
+
+3 × 2 = 6
+
+Raise 10 to the power of 2.
+
+10^2 = 100
+
+So,
+
+(10a^3)^2 = 100a^6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#PowerRuleInstruction"/>
+        <Literal>When raising a power to another power, multiply the exponents.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PracticeDivision"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PracticeFractionalExponent"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PracticeMultiplication"/>
+        <Literal>Easy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PracticeNegativeExponent"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PracticePowerRule"/>
+        <Literal>Hard</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PracticeZeroExponent"/>
+        <Literal>Easy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCurrentScore"/>
+        <NamedIndividual IRI="#Progress1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">85.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCurrentScore"/>
+        <NamedIndividual IRI="#Progress2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">78.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCurrentScore"/>
+        <NamedIndividual IRI="#Progress3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">92.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuizQuestion"/>
+        <NamedIndividual IRI="#Quiz1"/>
+        <Literal>1. Simplify 4a^6 × 5a^−2
+
+a. 20a^8   b. 20a^-12   c. 20a^4
+
+2. Simplify −3a^(4b) ÷ 6a^(7b)
+
+a. 18a^(11b)   b. 18a^(28b)   c. -18a^(2b)
+
+3. Simplify (32x) ^0 × 6^2
+
+ a. 36x^2   b. 192x   c. 36
+
+4. Simplify 6b^4
+
+a. 2b   b. 3/2b   c. 6/b^4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScoreWeight"/>
+        <NamedIndividual IRI="#Quiz1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuizQuestion"/>
+        <NamedIndividual IRI="#Quiz2"/>
+        <Literal>1. Evaluate 64^(2/3)
+
+a. 8   b. 16   c.512
+
+2. Evaluate 16^(−1/2)
+
+a. 8   b. 1/4   c.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScoreWeight"/>
+        <NamedIndividual IRI="#Quiz2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasComplete"/>
+        <NamedIndividual IRI="#QuizCompletion1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasComplete"/>
+        <NamedIndividual IRI="#QuizCompletion2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">80.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScore"/>
+        <NamedIndividual IRI="#QuizScore1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScore"/>
+        <NamedIndividual IRI="#QuizScore2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">80.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Result1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">32.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Result2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnrollmentDate"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>2024-12-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>ID00001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>Alice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnrollmentDate"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>2024-12-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>ID00002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>Bob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnrollmentDate"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>2024-12-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>ID00003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>Charlie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#ZeroExponentExample"/>
+        <Literal>Example
+
+Simplify 12a^0
+
+=12(1) = 12
+
+We can see that 12 × 1 = 12.
+
+Multiplying anything by 1 leaves it unchanged, this is called the multiplicative identity.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInstructionText"/>
+        <NamedIndividual IRI="#ZeroExponentInstruction"/>
+        <Literal>Any number raised to the power of zero equals 1.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#ZeroExponentRule1"/>
+        <Literal>𝑎^0 = 1 (for 𝑎≠0)</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followsRule"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#IndexRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompleted"/>
+        <Class IRI="#QuizCompletion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExample"/>
+        <Class IRI="#Instruction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExponent"/>
+        <Class IRI="#IndexRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasKnowledgeLevel"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProgress"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScored"/>
+        <Class IRI="#QuizScore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAchieved"/>
+        <Class IRI="#KnowledgeLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTracking"/>
+        <Class IRI="#Progress"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultsIn"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#TutoringModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followsRule"/>
+        <Class IRI="#IndexRule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompleted"/>
+        <Class IRI="#Quiz"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExample"/>
+        <Class IRI="#WorkedExample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExponent"/>
+        <Class IRI="#Exponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <Class IRI="#Feedback"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasKnowledgeLevel"/>
+        <Class IRI="#KnowledgeLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProgress"/>
+        <Class IRI="#Progress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuiz"/>
+        <Class IRI="#Quiz"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScored"/>
+        <Class IRI="#Quiz"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAchieved"/>
+        <Class IRI="#IndexRule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTracking"/>
+        <Class IRI="#PracticeProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resultsIn"/>
+        <Class IRI="#Result"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#IndexRule"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasComplete"/>
+        <Class IRI="#QuizCompletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCurrentScore"/>
+        <Class IRI="#Progress"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <Class IRI="#PracticeProblem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEnrollmentDate"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <Class IRI="#Feedback"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFormula"/>
+        <Class IRI="#IndexRule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasID"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInstructionText"/>
+        <Class IRI="#Instruction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMasteryLevel"/>
+        <Class IRI="#KnowledgeLevel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasQuizQuestion"/>
+        <Class IRI="#Quiz"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSample"/>
+        <Class IRI="#IndexRule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScore"/>
+        <Class IRI="#QuizScore"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScoreWeight"/>
+        <Class IRI="#Quiz"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Component"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasComplete"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCurrentScore"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEnrollmentDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFeedbackText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInstructionText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMasteryLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasQuizQuestion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSample"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScore"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScoreWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
