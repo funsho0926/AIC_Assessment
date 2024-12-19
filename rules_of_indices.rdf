@@ -1,0 +1,1435 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2024/11/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2024/11/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rules_of_indices="http://example.org/ontology/rules_of_indices#">
+    <owl:Ontology rdf:about="http://example.org/ontology/rules_of_indices">
+        <owl:versionIRI rdf:resource="http://example.org/ontology/rules_of_indices/1.0"/>
+        <rdfs:comment>A mathematical ontology that describes the rules of indices</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#followsRule -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#followsRule">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Operation"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasBase">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasCompleted -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasCompleted">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#QuizCompletion"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasExample -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasExample">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Instruction"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasExponent -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasExponent">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasFeedback">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Activity"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasKnowledgeLevel -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasKnowledgeLevel">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasProgress -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasProgress">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Progress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasQuiz -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasQuiz">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Activity"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasScored -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#hasScored">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#QuizScore"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#isAchieved -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#isAchieved">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#isTracking -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#isTracking">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Progress"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#resultsIn">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Operation"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/rules_of_indices#teaches">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#TutoringModel"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasComplete -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasComplete">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#QuizCompletion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasCurrentScore -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasCurrentScore">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Progress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasDifficultyLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasDifficultyLevel">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasEnrollmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasEnrollmentDate">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasFeedbackText -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasFeedbackText">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasFormula">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasID">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasInstructionText -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasInstructionText">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Instruction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasMasteryLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasMasteryLevel">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasName">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasQuizQuestion -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasQuizQuestion">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasSample -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasSample">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasScore">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#QuizScore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasScoreWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasScoreWeight">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/rules_of_indices#hasValue">
+        <rdfs:domain rdf:resource="http://example.org/ontology/rules_of_indices#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Activity -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Activity">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#TutoringModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Base">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Calculation -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Calculation">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Operation"/>
+        <owl:disjointWith rdf:resource="http://example.org/ontology/rules_of_indices#Simplification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Component -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Component">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#MathematicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Feedback"/>
+        <owl:disjointWith rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#DivisionRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#DivisionRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Exponent">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Feedback -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Feedback">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#TutoringModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#FractionalExponentRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#FractionalExponentRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Feedback"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IndexRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#IndexRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#MathematicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Instruction -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Instruction">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#TutoringModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#KnowledgeLevel -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#KnowledgeLevel">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#StudentClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#LawsOfIndicesITS -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#LawsOfIndicesITS"/>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#MathematicalConcept -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#MathematicalConcept">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#LawsOfIndicesITS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#MultiplicationRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#MultiplicationRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#NegativeExponentRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#NegativeExponentRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Operation -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Operation">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#MathematicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PowerRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#PowerRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticeProblem -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#PracticeProblem">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Activity"/>
+        <owl:disjointWith rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Progress -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Progress">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#StudentClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Quiz -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Quiz">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#QuizCompletion -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#QuizCompletion">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#StudentClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#QuizScore -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#QuizScore">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#StudentClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Result -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Result">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#RuleExplanation -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#RuleExplanation">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Instruction"/>
+        <owl:disjointWith rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Simplification -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Simplification">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Student -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#Student">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#StudentClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#StudentClass -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#StudentClass">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#LawsOfIndicesITS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#TutoringModel -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#TutoringModel">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#LawsOfIndicesITS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#WorkedExample -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#WorkedExample">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#Instruction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#ZeroExponentRule -->
+
+    <owl:Class rdf:about="http://example.org/ontology/rules_of_indices#ZeroExponentRule">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/rules_of_indices#IndexRule"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Base1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Base2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Base3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base4 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Base4">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base5 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Base5">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Base6 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Base6">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Base"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Calculation1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Calculation1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Calculation"/>
+        <rules_of_indices:followsRule rdf:resource="http://example.org/ontology/rules_of_indices#DivisionRule1"/>
+        <rules_of_indices:resultsIn rdf:resource="http://example.org/ontology/rules_of_indices#Result2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Great job, You applied the multiplication rule correctly.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Great work! You applied the division rule correctly.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Well done! You multiplied the exponents correctly.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback4 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback4">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Excellent! Any number to the power of zero is 1.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback5 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback5">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Great job! You applied the fractional exponent rule correctly.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#CorrectFeedback6 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#CorrectFeedback6">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Great job! You handled the negative exponent correctly.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#DivisionExample -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#DivisionExample">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+        <rules_of_indices:hasInstructionText>Example
+Simplify 21a^9 ÷ 7a^2
+
+1. Subtract the indices 9 and 2.
+
+9 – 2 = 7
+
+2. Divide the coefficients 21 and 7.
+
+21 ÷ 7 = 3
+
+So,
+
+21a^9 ÷ 7a^2 = 3a^7</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#DivisionInstruction -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#DivisionInstruction">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#RuleExplanation"/>
+        <rules_of_indices:hasExample rdf:resource="http://example.org/ontology/rules_of_indices#DivisionExample"/>
+        <rules_of_indices:hasInstructionText>When dividing powers with the same base, subtract the exponents.</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#DivisionRule1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#DivisionRule1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#DivisionRule"/>
+        <rules_of_indices:hasBase rdf:resource="http://example.org/ontology/rules_of_indices#Base2"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent2"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent3"/>
+        <rules_of_indices:hasFormula>a^m ÷ a^n = a^(m−n)</rules_of_indices:hasFormula>
+        <rules_of_indices:hasSample>2^5 ÷ 2^3 = 2^(5−3) = 2^2 = 4.</rules_of_indices:hasSample>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent4 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent4">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent5 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent5">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent6 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent6">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-3.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent7 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent7">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Exponent8 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Exponent8">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Exponent"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#FractionalExponentExample -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#FractionalExponentExample">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+        <rules_of_indices:hasInstructionText>Evaluate 27^(2/3)
+
+Use the denominator to find the cube root of the number or letter.
+
+√27 = 3
+
+Raise the answer to the power of the numerator.
+
+3^2 = 9
+
+So, 
+
+27^(2/3) = 9</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#FractionalExponentInstruction -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#FractionalExponentInstruction">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#RuleExplanation"/>
+        <rules_of_indices:hasExample rdf:resource="http://example.org/ontology/rules_of_indices#FractionalExponentExample"/>
+        <rules_of_indices:hasInstructionText>A fractional exponent represents a root. For example, 𝑎^(1/n) is the n-th root of a.</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#FractionalExponentRule1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#FractionalExponentRule1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#FractionalExponentRule"/>
+        <rules_of_indices:hasBase rdf:resource="http://example.org/ontology/rules_of_indices#Base6"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent7"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent8"/>
+        <rules_of_indices:hasFormula>a^(m/n) = (a^m)^(1/n)</rules_of_indices:hasFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Remember, for multiplication, you add the exponents, not multiply them.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Remember, for division, you subtract the exponents, not divide them.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Remember, for powers of powers, you multiply the exponents.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback4 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback4">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Remember, x^0 is always 1, regardless of the base.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback5 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback5">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Remember, a fractional exponent represents a root, not multiplication.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#IncorrectFeedback6 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#IncorrectFeedback6">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback"/>
+        <rules_of_indices:hasFeedbackText>Remember, a negative exponent means the reciprocal, not a negative number.</rules_of_indices:hasFeedbackText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#KnowledgeLevel1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#KnowledgeLevel1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+        <rules_of_indices:isAchieved rdf:resource="http://example.org/ontology/rules_of_indices#MultiplicationRule1"/>
+        <rules_of_indices:hasMasteryLevel>Intermediate</rules_of_indices:hasMasteryLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#KnowledgeLevel2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#KnowledgeLevel2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+        <rules_of_indices:isAchieved rdf:resource="http://example.org/ontology/rules_of_indices#DivisionRule1"/>
+        <rules_of_indices:hasMasteryLevel>Beginner</rules_of_indices:hasMasteryLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#KnowledgeLevel3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#KnowledgeLevel3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+        <rules_of_indices:isAchieved rdf:resource="http://example.org/ontology/rules_of_indices#PowerRule1"/>
+        <rules_of_indices:hasMasteryLevel>Advanced</rules_of_indices:hasMasteryLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#MultiplicationExample -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#MultiplicationExample">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+        <rules_of_indices:hasInstructionText>Example
+
+Simplify
+
+4a^3 × 7a^2
+
+This can be written as
+
+4a^3 × 7a^2 = 4×a×a×a×7×a×a
+
+1. Add together the indices 3 and the 2.
+
+3 + 2 = 5
+
+2. Multiply 4 and 7 together.
+
+4 × 7 = 28
+
+So,
+
+4a^3 × 7a^2 = 28a^5</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#MultiplicationInstruction -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#MultiplicationInstruction">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#RuleExplanation"/>
+        <rules_of_indices:hasExample rdf:resource="http://example.org/ontology/rules_of_indices#MultiplicationExample"/>
+        <rules_of_indices:hasInstructionText>When multiplying powers with the same base, add the exponents.</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#MultiplicationRule1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#MultiplicationRule1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#MultiplicationRule"/>
+        <rules_of_indices:hasBase rdf:resource="http://example.org/ontology/rules_of_indices#Base1"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent1"/>
+        <rules_of_indices:hasFormula>a^m × a^n = a^(m+n)</rules_of_indices:hasFormula>
+        <rules_of_indices:hasSample>2^3 × 2^2 = 2^5 = 32.</rules_of_indices:hasSample>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#NegativeExponentInstruction -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#NegativeExponentInstruction">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#RuleExplanation"/>
+        <rules_of_indices:hasExample rdf:resource="http://example.org/ontology/rules_of_indices#NegativeExponentialExample"/>
+        <rules_of_indices:hasInstructionText>A negative exponent means taking the reciprocal. For example, 𝑎^(-n) = 1/𝑎^𝑛.
+ .</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#NegativeExponentRule1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#NegativeExponentRule1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#NegativeExponentRule"/>
+        <rules_of_indices:hasBase rdf:resource="http://example.org/ontology/rules_of_indices#Base5"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent6"/>
+        <rules_of_indices:hasFormula>a^−n = 1/a^n​</rules_of_indices:hasFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#NegativeExponentialExample -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#NegativeExponentialExample">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+        <rules_of_indices:hasInstructionText>Example 3: negative indices
+
+Simplify and leave your answer in index form.
+
+(−4a^−3)^2
+
+Multiply the indices -3 and the 2.
+
+−3 × 2 = −6
+
+Raise -4 to the power of 2.
+
+(−4)^2 = 16
+
+So,
+
+(−4a^−3)^2 = 16a^−6</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PowerRule1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PowerRule1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PowerRule"/>
+        <rules_of_indices:hasBase rdf:resource="http://example.org/ontology/rules_of_indices#Base3"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent4"/>
+        <rules_of_indices:hasExponent rdf:resource="http://example.org/ontology/rules_of_indices#Exponent5"/>
+        <rules_of_indices:hasFormula>(𝑎^𝑚)^𝑛 = 𝑎^(𝑚⋅𝑛)</rules_of_indices:hasFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PowerRuleExample -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PowerRuleExample">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+        <rules_of_indices:hasInstructionText>Example
+
+Simplify and leave your answer in index form.
+
+(10a^3)^2
+
+Multiply the indices 3 and the 2.
+
+3 × 2 = 6
+
+Raise 10 to the power of 2.
+
+10^2 = 100
+
+So,
+
+(10a^3)^2 = 100a^6</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PowerRuleInstruction -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PowerRuleInstruction">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#RuleExplanation"/>
+        <rules_of_indices:hasExample rdf:resource="http://example.org/ontology/rules_of_indices#PowerRuleExample"/>
+        <rules_of_indices:hasInstructionText>When raising a power to another power, multiply the exponents.</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticeDivision -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PracticeDivision">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback2"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback2"/>
+        <rules_of_indices:hasQuiz rdf:resource="http://example.org/ontology/rules_of_indices#Quiz1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#DivisionRule1"/>
+        <rules_of_indices:hasDifficultyLevel>Medium</rules_of_indices:hasDifficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticeFractionalExponent -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PracticeFractionalExponent">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback5"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback5"/>
+        <rules_of_indices:hasQuiz rdf:resource="http://example.org/ontology/rules_of_indices#Quiz2"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#FractionalExponentRule1"/>
+        <rules_of_indices:hasDifficultyLevel>Medium</rules_of_indices:hasDifficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticeMultiplication -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PracticeMultiplication">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback1"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback1"/>
+        <rules_of_indices:hasQuiz rdf:resource="http://example.org/ontology/rules_of_indices#Quiz1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#MultiplicationRule1"/>
+        <rules_of_indices:hasDifficultyLevel>Easy</rules_of_indices:hasDifficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticeNegativeExponent -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PracticeNegativeExponent">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback6"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback6"/>
+        <rules_of_indices:hasQuiz rdf:resource="http://example.org/ontology/rules_of_indices#Quiz2"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#NegativeExponentRule1"/>
+        <rules_of_indices:hasDifficultyLevel>Medium</rules_of_indices:hasDifficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticePowerRule -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PracticePowerRule">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback3"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback3"/>
+        <rules_of_indices:hasQuiz rdf:resource="http://example.org/ontology/rules_of_indices#Quiz1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#PowerRule1"/>
+        <rules_of_indices:hasDifficultyLevel>Hard</rules_of_indices:hasDifficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#PracticeZeroExponent -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#PracticeZeroExponent">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#PracticeProblem"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#CorrectFeedback4"/>
+        <rules_of_indices:hasFeedback rdf:resource="http://example.org/ontology/rules_of_indices#IncorrectFeedback4"/>
+        <rules_of_indices:hasQuiz rdf:resource="http://example.org/ontology/rules_of_indices#Quiz1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#ZeroExponentRule1"/>
+        <rules_of_indices:hasDifficultyLevel>Easy</rules_of_indices:hasDifficultyLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Progress1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Progress1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Progress"/>
+        <rules_of_indices:isTracking rdf:resource="http://example.org/ontology/rules_of_indices#PracticeMultiplication"/>
+        <rules_of_indices:hasCurrentScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.0</rules_of_indices:hasCurrentScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Progress2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Progress2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Progress"/>
+        <rules_of_indices:isTracking rdf:resource="http://example.org/ontology/rules_of_indices#PracticeDivision"/>
+        <rules_of_indices:hasCurrentScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">78.0</rules_of_indices:hasCurrentScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Progress3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Progress3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Progress"/>
+        <rules_of_indices:isTracking rdf:resource="http://example.org/ontology/rules_of_indices#PracticePowerRule"/>
+        <rules_of_indices:hasCurrentScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">92.0</rules_of_indices:hasCurrentScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Quiz1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Quiz1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#DivisionRule1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#MultiplicationRule1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#PowerRule1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#ZeroExponentRule1"/>
+        <rules_of_indices:hasQuizQuestion>1. Simplify 4a^6 × 5a^−2
+
+a. 20a^8   b. 20a^-12   c. 20a^4
+
+2. Simplify −3a^(4b) ÷ 6a^(7b)
+
+a. 18a^(11b)   b. 18a^(28b)   c. -18a^(2b)
+
+3. Simplify (32x) ^0 × 6^2
+
+ a. 36x^2   b. 192x   c. 36
+
+4. Simplify 6b^4
+
+a. 2b   b. 3/2b   c. 6/b^4</rules_of_indices:hasQuizQuestion>
+        <rules_of_indices:hasScoreWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</rules_of_indices:hasScoreWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Quiz2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Quiz2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Quiz"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#FractionalExponentRule1"/>
+        <rules_of_indices:teaches rdf:resource="http://example.org/ontology/rules_of_indices#NegativeExponentRule1"/>
+        <rules_of_indices:hasQuizQuestion>1. Evaluate 64^(2/3)
+
+a. 8   b. 16   c.512
+
+2. Evaluate 16^(−1/2)
+
+a. 8   b. 1/4   c.4</rules_of_indices:hasQuizQuestion>
+        <rules_of_indices:hasScoreWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</rules_of_indices:hasScoreWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#QuizCompletion1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#QuizCompletion1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#QuizCompletion"/>
+        <rules_of_indices:hasCompleted rdf:resource="http://example.org/ontology/rules_of_indices#Quiz1"/>
+        <rules_of_indices:hasComplete rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</rules_of_indices:hasComplete>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#QuizCompletion2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#QuizCompletion2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#QuizCompletion"/>
+        <rules_of_indices:hasCompleted rdf:resource="http://example.org/ontology/rules_of_indices#Quiz2"/>
+        <rules_of_indices:hasComplete rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</rules_of_indices:hasComplete>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#QuizScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#QuizScore1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#QuizScore"/>
+        <rules_of_indices:hasScored rdf:resource="http://example.org/ontology/rules_of_indices#Quiz1"/>
+        <rules_of_indices:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</rules_of_indices:hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#QuizScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#QuizScore2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#QuizScore"/>
+        <rules_of_indices:hasScored rdf:resource="http://example.org/ontology/rules_of_indices#Quiz2"/>
+        <rules_of_indices:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</rules_of_indices:hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Result1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Result1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Result"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Result2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Result2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Result"/>
+        <rules_of_indices:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</rules_of_indices:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Simplification1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Simplification1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Simplification"/>
+        <rules_of_indices:followsRule rdf:resource="http://example.org/ontology/rules_of_indices#MultiplicationRule1"/>
+        <rules_of_indices:resultsIn rdf:resource="http://example.org/ontology/rules_of_indices#Result1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Student1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rules_of_indices:hasKnowledgeLevel rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel1"/>
+        <rules_of_indices:hasProgress rdf:resource="http://example.org/ontology/rules_of_indices#Progress1"/>
+        <rules_of_indices:hasEnrollmentDate>2024-12-18</rules_of_indices:hasEnrollmentDate>
+        <rules_of_indices:hasID>ID00001</rules_of_indices:hasID>
+        <rules_of_indices:hasName>Alice</rules_of_indices:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Student2">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rules_of_indices:hasKnowledgeLevel rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel2"/>
+        <rules_of_indices:hasProgress rdf:resource="http://example.org/ontology/rules_of_indices#Progress2"/>
+        <rules_of_indices:hasEnrollmentDate>2024-12-18</rules_of_indices:hasEnrollmentDate>
+        <rules_of_indices:hasID>ID00002</rules_of_indices:hasID>
+        <rules_of_indices:hasName>Bob</rules_of_indices:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#Student3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#Student3">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#Student"/>
+        <rules_of_indices:hasKnowledgeLevel rdf:resource="http://example.org/ontology/rules_of_indices#KnowledgeLevel3"/>
+        <rules_of_indices:hasProgress rdf:resource="http://example.org/ontology/rules_of_indices#Progress3"/>
+        <rules_of_indices:hasEnrollmentDate>2024-12-18</rules_of_indices:hasEnrollmentDate>
+        <rules_of_indices:hasID>ID00003</rules_of_indices:hasID>
+        <rules_of_indices:hasName>Charlie</rules_of_indices:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#ZeroExponentExample -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#ZeroExponentExample">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#WorkedExample"/>
+        <rules_of_indices:hasInstructionText>Example
+
+Simplify 12a^0
+
+=12(1) = 12
+
+We can see that 12 × 1 = 12.
+
+Multiplying anything by 1 leaves it unchanged, this is called the multiplicative identity.</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#ZeroExponentInstruction -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#ZeroExponentInstruction">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#RuleExplanation"/>
+        <rules_of_indices:hasExample rdf:resource="http://example.org/ontology/rules_of_indices#ZeroExponentExample"/>
+        <rules_of_indices:hasInstructionText>Any number raised to the power of zero equals 1.</rules_of_indices:hasInstructionText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/rules_of_indices#ZeroExponentRule1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/rules_of_indices#ZeroExponentRule1">
+        <rdf:type rdf:resource="http://example.org/ontology/rules_of_indices#ZeroExponentRule"/>
+        <rules_of_indices:hasBase rdf:resource="http://example.org/ontology/rules_of_indices#Base4"/>
+        <rules_of_indices:hasFormula>𝑎^0 = 1 (for 𝑎≠0)</rules_of_indices:hasFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Activity"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Feedback"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Instruction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Base"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Exponent"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Result"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#DivisionRule"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#FractionalExponentRule"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#MultiplicationRule"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#NegativeExponentRule"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#PowerRule"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#ZeroExponentRule"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#KnowledgeLevel"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Progress"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#QuizCompletion"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#QuizScore"/>
+            <rdf:Description rdf:about="http://example.org/ontology/rules_of_indices#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
